@@ -1,13 +1,14 @@
 import React from "react";
-import MonthBox from "../../atom/MonthBox";
+import Button from "../../atom/Button";
+import { StyledMonthList } from "./style";
 
 const MonthList = () => {
   return (
-    <div>
+    <StyledMonthList>
       {new Array(12).fill(0).map((_, index) => (
-        <MonthBox>{index}월</MonthBox>
+        <Button>{index + 1}월</Button>
       ))}
-    </div>
+    </StyledMonthList>
   );
 };
 

@@ -1,6 +1,7 @@
 import { jsx as _jsx } from "react/jsx-runtime";
-import * as Styled from "./styled";
-function Hyeonsu() {
-    return _jsx(Styled.Container, { children: "\uD604\uC218 \uCEF4\uD3EC\uB10C\uD2B8" });
-}
-export default Hyeonsu;
+import MonthList from "../molecules/MonthList";
+import { StyledMonthCalendar } from "./styled";
+var MonthCalendar = function () {
+    return (_jsx(StyledMonthCalendar, { children: _jsx(MonthList, {}, void 0) }, void 0));
+};
+export default MonthCalendar;

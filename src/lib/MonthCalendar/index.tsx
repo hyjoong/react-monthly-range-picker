@@ -5,7 +5,10 @@ import { StyledMonthCalendar } from "./styled";
 const MonthCalendar = () => {
   return (
     <StyledMonthCalendar>
-      <MonthList />
+      <div className="calendar-box">
+        <MonthList />
+        <MonthList />
+      </div>
     </StyledMonthCalendar>
   );
 };

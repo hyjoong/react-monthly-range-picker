@@ -1,3 +1,3 @@
 /// <reference types="react" />
-declare function Hyeonsu(): JSX.Element;
-export default Hyeonsu;
+declare const MonthCalendar: () => JSX.Element;
+export default MonthCalendar;

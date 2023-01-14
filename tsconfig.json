@@ -18,5 +18,9 @@
     "declaration": true,
     "outDir": "./dist"
   },
-  "include": ["./src/lib/**/*.tsx", "./src/lib/**/*.ts"]
+  "paths": {
+    "@/*": ["*"]
+  },
+
+  "include": ["./src/lib/**/*.tsx", "./src/lib/**/*.ts", "stitches.config.ts"]
 }
