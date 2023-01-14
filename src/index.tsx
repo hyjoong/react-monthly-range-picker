@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+import MonthCalendar from "./lib/MonthCalendar/index";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MonthCalendar />
   </React.StrictMode>,
   document.getElementById("root")
 );
