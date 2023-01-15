@@ -1,6 +1,10 @@
-import React from "react";
+import { ComponentPropsWithoutRef, ReactNode } from "react";
 import { StyledButton } from "./style";
-import { ButtonProps } from "./type";
+
+export interface ButtonProps
+  extends ComponentPropsWithoutRef<typeof StyledButton> {
+  children: ReactNode;
+}
 
 const Button = ({ children, ...props }: ButtonProps) => {
   return <StyledButton {...props}>{children}</StyledButton>;
