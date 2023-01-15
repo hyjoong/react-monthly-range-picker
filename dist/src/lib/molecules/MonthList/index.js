@@ -24,6 +24,9 @@ var MonthList = function (_a) {
                     var month = index < 9 ? "0".concat(index + 1) : "".concat(index + 1);
                     var yearMonth = String(year) + month;
                     var isRange = (startMonth < yearMonth && yearMonth <= hoverMonth) ||
+                        (hoverMonth < startMonth &&
+                            hoverMonth <= yearMonth &&
+                            yearMonth <= startMonth) ||
                         (startMonth < yearMonth && yearMonth <= endMonth);
                     return (_jsxs(Button, __assign({ onMouseOver: function () { return handleHoverMonth(year, month); }, onMouseOut: function () { return setHoverMonth(undefined); }, onClick: function () { return handleRangeMonth(year, month); }, isRange: isRange, isSelected: String(year) + month === startMonth ||
                             String(year) + month === endMonth, isDisabled: todayYearMonth < yearMonth }, { children: [index + 1, "\uC6D4"] }), year + index));

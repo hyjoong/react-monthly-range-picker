@@ -4,7 +4,4 @@ export var StyledMonthList = styled("div", {
     gridTemplateColumns: "repeat(3, 1fr)",
     width: "250px",
     gap: "7px",
-    button: {
-    // color: "#FFFFFF",
-    },
 });

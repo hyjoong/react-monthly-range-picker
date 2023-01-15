@@ -52,6 +52,9 @@ const MonthList = ({
 
           const isRange =
             (startMonth < yearMonth && yearMonth <= hoverMonth) ||
+            (hoverMonth < startMonth &&
+              hoverMonth <= yearMonth &&
+              yearMonth <= startMonth) ||
             (startMonth < yearMonth && yearMonth <= endMonth);
 
           return (
