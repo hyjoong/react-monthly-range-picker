@@ -1,15 +1,38 @@
-import { styled } from "../../../../stitches.config";
+import { styled } from "@stitches/react";
 
 export const StyledButton = styled("button", {
   padding: "10px",
   outLine: "none",
   color: "black",
-  border: "1px solid grey",
+  border: "none",
   cursor: "pointer",
-  backGroundColor: "transparent",
+  fontWeight: "600",
+  borderRadius: "5px",
 
   "&.selected": {
     color: "#FFFFFF",
     backgroundColor: "#586CF5",
+  },
+
+  variants: {
+    isRange: {
+      true: {
+        backgroundColor: "#D2C6E3",
+      },
+    },
+
+    isSelected: {
+      true: {
+        color: "#FFFFFF",
+        backgroundColor: "#586CF5 !important",
+      },
+    },
+
+    isDisabled: {
+      true: {
+        color: "#FFFFFF",
+        backgroundColor: "#D1D5DB !important",
+      },
+    },
   },
 });

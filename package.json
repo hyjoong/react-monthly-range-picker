@@ -1,6 +1,6 @@
 {
   "name": "react-monthly-range-picker",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "react-month-calendar",
   "private": false,
   "main": "dist/index.js",

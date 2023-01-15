@@ -1,11 +1,14 @@
-// import { styled } from "@stitches/react";
-
-import { styled } from "../../../stitches.config";
+import { styled } from "@stitches/react";
 
 export const StyledMonthCalendar = styled("div", {
   width: "530px",
-  ".calendar-box": {
+  ".calendar-wrapper": {
     display: "flex",
-    justifyContent: "space-around",
+    flexDirection: "column",
+  },
+  ".calendar-box": {
+    width: "100%",
+    display: "flex",
+    justifyContent: "space-between",
   },
 });
