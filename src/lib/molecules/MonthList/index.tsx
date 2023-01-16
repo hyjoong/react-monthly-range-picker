@@ -68,7 +68,7 @@ const MonthList = ({
                 String(year) + month === startMonth ||
                 String(year) + month === endMonth
               }
-              isDisabled={todayYearMonth < yearMonth}
+              disabled={todayYearMonth < yearMonth}
             >
               {index + 1}월
             </Button>

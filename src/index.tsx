@@ -5,7 +5,9 @@ import MonthCalendar from "./lib/MonthCalendar/index";
 
 ReactDOM.render(
   <React.StrictMode>
-    <MonthCalendar />
+    <div style={{ margin: "150px" }}>
+      <MonthCalendar />
+    </div>
   </React.StrictMode>,
   document.getElementById("root")
 );

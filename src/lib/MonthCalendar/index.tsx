@@ -11,6 +11,7 @@ const MonthCalendar = () => {
   const [hoverMonth, setHoverMonth] = useState<string | undefined>(undefined);
   const [startYear, setStartYear] = useState(String(Number(year) - 1));
   const [endYear, setEndYear] = useState(year);
+
   const handleRangeMonth = (year: string, month: string) => {
     const yearMonth = year + month;
     if ((startMonth && endMonth) || !startMonth) {
@@ -88,19 +89,14 @@ const MonthCalendar = () => {
             isStartYear={false}
           />
         </div>
-        <div
-          style={{
-            margin: "10px 0px",
-            display: "flex",
-            justifyContent: "space-between",
-            height: "35px",
-          }}
-        >
-          <div>
+        <div className="calendar-bottom">
+          <div className="calendar-date">
             {startMonth && (
-              <p style={{ marginLeft: "20px", fontWeight: "600" }}>
-                {startMonth} ~ {endMonth}
-              </p>
+              <div>
+                <p> {startMonth}</p>
+                <p className="hyphen">-</p>
+                <p>{endMonth} </p>
+              </div>
             )}
           </div>
           <Button

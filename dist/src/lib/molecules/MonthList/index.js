@@ -29,7 +29,7 @@ var MonthList = function (_a) {
                             yearMonth <= startMonth) ||
                         (startMonth < yearMonth && yearMonth <= endMonth);
                     return (_jsxs(Button, __assign({ onMouseOver: function () { return handleHoverMonth(year, month); }, onMouseOut: function () { return setHoverMonth(undefined); }, onClick: function () { return handleRangeMonth(year, month); }, isRange: isRange, isSelected: String(year) + month === startMonth ||
-                            String(year) + month === endMonth, isDisabled: todayYearMonth < yearMonth }, { children: [index + 1, "\uC6D4"] }), year + index));
+                            String(year) + month === endMonth, disabled: todayYearMonth < yearMonth }, { children: [index + 1, "\uC6D4"] }), year + index));
                 }) }, void 0)] }), void 0));
 };
 // 사이에 있으면
